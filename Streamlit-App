@@ -106,5 +106,9 @@ fig = go.Figure(data=[edge_trace, node_trace],
 st.title("Bibliometric Network Visualisation")
 st.plotly_chart(fig)
 
+webpage = 'https://app.vosviewer.com/?json=https%3A%2F%2Fapp.vosviewer.com%2Fdata%2FScientometrics_term_co-occurrence_network.json'
+
+components.iframe(webpage, width=500, height=500)
+
 # Get the current credentials
 session = get_active_session()
